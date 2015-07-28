@@ -12,7 +12,6 @@ export function getFriends (howmany) {
         // TODO: handle errors
         fetch(`${DATA_API}/friends.json`)
             .then(res => res.json())
-            .then(res => console.log(res))
             .then(res => dispatch({
                 type: GET_FRIENDS,
                 friends: res
