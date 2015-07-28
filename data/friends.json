@@ -1,0 +1,22 @@
+[
+  {
+    "rank": 1,
+    "name": "Paul",
+    "likes": 200
+  },
+  {
+    "rank": 2,
+    "name": "Em",
+    "likes": 190
+  },
+  {
+    "rank": 3,
+    "name": "Simon",
+    "likes": 180
+  },
+  {
+    "rank": 4,
+    "name": "John",
+    "likes": 170
+  }
+]
