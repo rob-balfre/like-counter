@@ -15,7 +15,7 @@ export function getFriends (howmany) {
             .then(res => console.log(res))
             .then(res => dispatch({
                 type: GET_FRIENDS,
-                friendList: res
+                friends: res
             }))
     }
 }
