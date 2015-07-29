@@ -9,9 +9,19 @@ export default class Friends extends Component {
 
     render() {
         const { getFriends, friends } = this.props;
+
+        var friendNodes = this.props.friends.map(function (friend) {
+            return (
+                <div key={friend.rank}>
+                    <p>{friend.name}</p>
+                    <p>{friend.likes}</p>
+                </div>
+            );
+        });
+
         return (
             <div>
-                <p>{ friends }</p>
+                { friendNodes }
                 <button onClick={getFriends}>Load Friends list</button>
             </div>
         );

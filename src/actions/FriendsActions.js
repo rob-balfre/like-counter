@@ -2,14 +2,10 @@ import 'whatwg-fetch'
 import parseLinkHeader from 'parse-link-header'
 import { GET_FRIENDS } from '../constants/ActionTypes'
 
-const DATA_API = 'http://localhost:3000/data';
+const DATA_API = '/data';
 
-export function getFriends (howmany) {
-
-    console.log('getFriends fired');
-
+export function getFriends () {
     return dispatch => {
-        // TODO: handle errors
         fetch(`${DATA_API}/friends.json`)
             .then(res => res.json())
             .then(res => dispatch({
